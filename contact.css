@@ -1,0 +1,173 @@
+body {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#header {
+    display: flex;
+    transition: 0.25s ease-in-out;
+    position: relative;
+    z-index: 1;
+
+}
+
+#header:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.318);
+}
+
+logo img {
+    padding: 5%;
+    transform: scale(0.75);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+}
+
+nav a {
+    text-align: center;
+    color: rgba(24, 24, 24, 0.637);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+    width: fit-content;
+
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+.contact {
+    padding: 30px;
+}
+
+.contact .heading h2 {
+    font-family: 'Raleway', sans-serif;
+    font-variant: small-caps;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contact .heading p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #999999;
+    margin: 20px 0 60px;
+    padding: 0;
+}
+
+.contact .form-control {
+    padding: 25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 0;
+}
+
+.contact button.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: rgb(95, 95, 95);
+}
+
+.contact .title h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact .title p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.6;
+    margin: 0 0 40px;
+}
+
+.contact .content .info {
+    margin-top: 30px;
+}
+
+.contact .content .info i {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: #333333;
+    margin-right: 20px;
+    text-align: center;
+    width: 20px;
+}
+
+.contact .content .info h4 {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.contact .content .info h4 span {
+    font-size: 13px;
+    font-weight: 300;
+    color: #282828;
+}
+
+hamburger {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    hamburger {
+        display: block;
+
+    }
+
+    hamburger svg {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 17%;
+        height: 37px;
+        width: 37px;
+    }
+
+    hamburger svg:active {
+        transform: rotate(90deg);
+        transition: .25s;
+    }
+
+    nav {
+        flex-direction: column;
+        position: absolute;
+        right: -100%;
+        width: 60%;
+        padding-top: 10px;
+        transform: scale(1.1);
+        background-color: white;
+        transition: 0.3s ease-in-out;
+
+    }
+
+    nav a {
+        padding: 15px 0;
+        transform: scale(1.5);
+        font-weight: 600;
+    }
+    .contact .heading h2 {
+        font-variant: small-caps;
+        text-transform: uppercase;
+    }
+}
